@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .topbar{
+            height: 30px;
+            background-color: #ececec;
+        }
+        .container{
+            width: 900px;
+            margin: 0 auto;
+            background-color: orange;
+        }
+        .leftfix{
+            float: left;
+        }
+        .rightfix{
+            float: right;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .welcome{
+            height: 30px;
+            line-height: 30px;
+            font-size: 0px;
+        }
+        .welcome a, .welcome span{
+            font-size: 16px;
+        }
+        .welcome .hello{
+            margin-right: 10px;
+        }
+        .login{
+            padding-right: 10px;
+            border-right: 1px solid black;
+        }
+        .register{
+            padding-left: 10px;
+        }
+
+        .list li{
+            float: left;
+            list-style: none;
+        }
+
+        .list{
+            height: 30px;
+            line-height: 30px;
+        }
+
+        ul,ol{
+            list-style:none;
+            margin: 0;
+            padding: 0
+        }
+
+        .list li a{
+            padding: 0 15px;
+            border-right: 1px solid #666;
+        }
+
+        .list li:last-child a{
+            border: 0;
+            padding-right: 0;
+        }
+
+        .list li:first-child a{
+            padding-left: 0;
+        }
+
+        .header{
+            height: 120px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="container clearfix">
+            <div class="welcome leftfix">
+                <span class="hello">商品会欢迎您</span>
+                <span>请</span>
+                <a href="" class="login">登录</a>
+                <a href="" class="register">免费注册</a>
+            </div>
+
+            <div class="topbar-nav rightfix" >
+                <ul class="list clearfix">
+                    <li><a href="">djsdj</a></li>
+                    <li><a href="">djsdj</a></li>
+                    <li><a href="">djsdj</a></li>
+                    <li><a href="">djsdj</a></li>
+                    <li><a href="">djsdj</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header">
+        <div class="container">
+            <div class="left">
+ 
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
